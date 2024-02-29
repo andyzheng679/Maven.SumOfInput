@@ -15,6 +15,8 @@ public class Main {
         
         System.out.println(sum);
 
+        System.out.println(gaussianSumOfNumbers(3));
+
     }
     
     // do this one and the lab is complete. really.
@@ -22,7 +24,7 @@ public class Main {
     public static int sumOfNumbers(int n) {
     //for loop going over and adding it all up, create a variable
         int total_sum = 0;
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= n; i++){ //starts i at 1, no point for 0
             total_sum += i;
         }
         return total_sum;
@@ -44,10 +46,10 @@ public class Main {
     
     
     // for Extra Credit
-    int gaussianSumOfNumbers(int n) {
-        return 0;
+    public static int gaussianSumOfNumbers(int n) {
+        return (n * (n + 1)) / 2;
     }
-   
+
     // for Extra extra credit - compare the methods and show which one is faster
     // google "how to time some java code"
     // use "System.currentTimeMillis()" to ask the system what time it is.

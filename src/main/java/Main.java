@@ -31,6 +31,7 @@ public class Main {
     }
     
     
+    
     public static int getInputNumber() { // gee, may thi sis useful in another lab?
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter any number: ");
